@@ -1,0 +1,94 @@
+$roundBorder: 30px;
+
+.outer-person-tile
+{
+  position: relative;
+  transition: all .3s ease-in-out;
+  &:hover
+  {
+    transform: scale(1.05);
+    .profile-image
+      {
+        transition: all .3s ease-in-out;
+        transform: scale(1.1);
+      }
+  }
+}
+
+.person-website
+{
+  pointer-events: all;
+}
+.person-phone
+{
+  pointer-events: all;
+}
+.person-email
+{
+  pointer-events: all;
+}
+
+
+.link-overlay
+{
+  position: absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+}
+
+.inner-person-tile
+{
+  position:relative;
+  pointer-events:none;
+  z-index:1;
+  border-radius: $roundBorder;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 300px;
+  height: 485px;
+  padding: 25px;
+  overflow: hidden;
+  /*border-radius: $roundBorder;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 485px;
+  height: 300px;
+  padding: 25px;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;*/
+
+
+  .person-profile
+  {
+    margin:auto;
+    img
+    {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      aspect-ratio: 1;
+      margin:auto;
+      object-fit: cover;
+    }
+    .title
+    {
+      margin:auto;
+      text-align: center;
+    }
+
+  }
+  hr
+  {
+    border: 4px solid orange;
+    max-width: 90%;
+    border-radius: 5px;
+    /*width: 1px;
+    size: 90%;
+    border: 4px solid orange;
+    border-radius: 5px;*/
+  }
+}

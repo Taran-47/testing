@@ -1,0 +1,12 @@
+.program {
+  max-width: 900px;
+  margin: auto;
+}
+.program a {
+  color: orange;
+}
+.program b {
+  color: DarkBlue;
+}
+
+/*# sourceMappingURL=program.css.map */

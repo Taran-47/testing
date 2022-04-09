@@ -1,0 +1,17 @@
+.course {
+  margin: auto;
+  max-width: 900px;
+  text-align: center;
+}
+.course a {
+  color: #fb8500;
+}
+.course .course-content {
+  text-align: left;
+}
+.course .course-content .sections {
+  margin: auto;
+  width: auto;
+}
+
+/*# sourceMappingURL=course.css.map */

@@ -1,0 +1,10 @@
+.people-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /*align-items: flext-start;*/
+  /*align-content: flex-start;*/
+  gap: 25px;
+}
+
+/*# sourceMappingURL=people-list.css.map */

@@ -1,0 +1,22 @@
+#searchBar{
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #e5e5e5;
+    color: #282828;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.12);
+    padding: 0 .75em;
+    height: 2.6em;
+    vertical-align: middle;
+    border-radius: 1px;
+}
+
+.searchbar{
+    width: 100%;
+    max-width: 1550px;
+
+    margin: {
+        left: auto;
+        right: auto;
+        block: 2rem;
+    }
+}

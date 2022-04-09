@@ -1,0 +1,1 @@
+<a href="../section/?<?=sectionUrlParameter['course'] ?>=<?=$args["courseID"] ?>&<?=sectionUrlParameter['section'] ?>=<?=$args["sectionID"] ?>&<?=sectionUrlParameter['year'] ?>=<?=$args["year"] ?>&<?=sectionUrlParameter['semester'] ?>=<?=$args["semester"] ?>"><?=$args["sectionTitle"] ?></a>

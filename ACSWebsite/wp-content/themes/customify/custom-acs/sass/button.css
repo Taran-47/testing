@@ -1,0 +1,54 @@
+@charset "UTF-8";
+.custom, .arrow {
+  border: none;
+  padding: 0.4rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0.4rem 0.8rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: auto;
+  max-width: 300px;
+  border-radius: 1rem;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #00509D;
+  color: #FFFFFF;
+  border: 0.15rem solid #00509D;
+}
+.custom:hover, .arrow:hover {
+  background-color: #FFFFFF;
+  color: #00509D;
+}
+
+/*Always add a span class around the text in order to achieve an arrow*/
+.arrow span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+.arrow span:after {
+  content: "»";
+  font-weight: 600;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -1rem;
+  transition: 0.4s;
+}
+.arrow:hover {
+  background-color: #FFFFFF;
+  color: #00509D;
+}
+.arrow:hover span {
+  padding-right: 1rem;
+}
+.arrow:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*# sourceMappingURL=button.css.map */

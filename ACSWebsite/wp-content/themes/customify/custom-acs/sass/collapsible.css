@@ -1,0 +1,50 @@
+@charset "UTF-8";
+.collapsibles {
+  background-color: #FFFFFF;
+  color: black;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 100%;
+  border-bottom: 0.15rem solid #00509D;
+  text-align: left;
+  outline: none;
+  border-left: 0.15rem solid #FFFFFF;
+  border-right: 0.15rem solid #FFFFFF;
+  border-top: 0.15rem solid #FFFFFF;
+  font-size: 16px;
+}
+.collapsibles:hover {
+  background-color: #00509D;
+  color: #FFFFFF;
+  border-left: 0.15rem solid #00509D;
+  border-right: 0.15rem solid #00509D;
+  border-top: 0.15rem solid #00509D;
+}
+.collapsibles:after {
+  content: "▼";
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active {
+  background-color: #00509D;
+  color: #FFFFFF;
+  border-left: 0.15rem solid #00509D;
+  border-right: 0.15rem solid #00509D;
+  border-top: 0.15rem solid #00509D;
+}
+.active:after .collapsibles:after{
+  content: "▲";
+  color: #FFFFFF;
+}
+
+.content {
+  padding: 0 0.75rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: rgba(0, 80, 157, 0.05);
+}
+
+/*# sourceMappingURL=collapsible.css.map */

@@ -1,0 +1,60 @@
+$fontColor: #FFFFFF;
+$backgroundColor: #FD9E02;
+
+
+.apbPostDefault {
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    height: auto;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+
+    &:hover{
+        box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
+    }
+}
+
+ .apbPostFImg {
+    border-radius: 1.5rem 1.5rem 0 0;
+    height: 10rem;
+ } 
+
+ .apbPostTitle{
+    padding-left: 0.8rem;	
+ }
+
+ .apbInnerContent{
+    padding-left: 0.8rem;	
+    padding-right: 0.8rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+ }
+
+ .apbPostReadMore{
+    padding-left: 1.875rem;
+    transition: 0.3s;
+    opacity: 1;
+    text-align: center;
+    border-radius: 0 0 1.5rem 1.5rem;
+    text-transform: uppercase;
+    color: $fontColor;
+    margin-top:0rem;
+    margin-bottom:0rem;
+    font-weight: 600;
+ }
+
+ .apbPostDefault:hover .apbPostReadMore{ 
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    background-color: $backgroundColor;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    opacity: 1;
+  }
+
+  .fa-arrow-right{
+    float: right;
+    padding-right: 1.2rem;
+  }

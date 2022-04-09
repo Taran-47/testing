@@ -1,0 +1,54 @@
+$fontSize: 16px;
+$backgroundColor: #00509D;
+$fontColor: #FFFFFF;
+
+.collapsibles{
+    background-color: $fontColor;
+    color: black;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 100%;
+    border-bottom: 0.15rem solid $backgroundColor;
+    text-align: left;
+    outline: none;
+    border-left: 0.15rem solid $fontColor;
+    border-right: 0.15rem solid $fontColor;
+    border-top: 0.15rem solid $fontColor;
+    font-size: $fontSize;
+
+    &:hover {
+        background-color: $backgroundColor;
+        color: $fontColor;
+        border-left: 0.15rem solid $backgroundColor;
+        border-right: 0.15rem solid $backgroundColor;
+        border-top: 0.15rem solid $backgroundColor;
+    }
+
+    &:after{
+        content: '\25BC';
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;      
+    }
+}
+
+.active{
+    background-color: $backgroundColor;
+    color: $fontColor;
+    border-left: 0.15rem solid $backgroundColor;
+    border-right: 0.15rem solid $backgroundColor;
+    border-top: 0.15rem solid $backgroundColor;
+
+    &:after{
+        content: '\25B2';
+        color: $fontColor;
+    }
+}
+
+.content {
+    padding: 0 0.75rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: rgb(0,80,157,0.05);
+}
